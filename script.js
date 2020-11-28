@@ -5,7 +5,7 @@
 const boxes = Array.from(document.getElementsByClassName('box'))
 const playText = document.getElementById('playText')
 const restartBtn = document.getElementById('restartBtn')
-const spaces = [];
+let spaces = [];
 // const spaces = [null, null, null, null, null, null,null, null, null]
 const O_TEXT = "O"
 const X_TEXT = "X"
@@ -52,6 +52,7 @@ const boxClicked = (e)=>{
             return;
         }
         currentPlayer = currentPlayer === O_TEXT ? X_TEXT : O_TEXT
+        console.log(count);
         if(count === 9){
             playText.innerText = `Draw`
         }
@@ -111,9 +112,11 @@ const  playerHasWon = ()=>{
 
 
 const restart = ()=>{
-    spaces.forEach((space, index) => {
-        spaces[index] = null;
-    })
+    // spaces.forEach((space, index) => {
+    //     spaces[index] = null;
+    // })
+    spaces = [];
+    count = 0;
     boxes.forEach(box => {
         box.innerText = '';
     })
