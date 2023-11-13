@@ -44,6 +44,7 @@ h1{
     color: var(--purple);
     /* background-color: red; */
     font-size: 150px;
+    user-select: none;
     
 }
 
