@@ -1,5 +1,7 @@
 # Tic Tac Toe
 
+- For more visibility you can deploy them on github pages.
+
 ## Simple Tic Tac Toe
 
 - For running simple tic tac toe go to index.html file in simple_tic_tac_toe folder and run it.
