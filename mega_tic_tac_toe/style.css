@@ -1,0 +1,86 @@
+:root{
+    --purple: #3e0249;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--purple);
+    font-family: sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+    /* border and padding will be included in the height and width of the element */
+}
+
+h1{
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.container{
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameboard{
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    /* background-color: red; */
+    /* font-size: 150px; */
+    user-select: none;
+    
+}
+
+.box0, .box1,.box2,.box3, .box4, .box5, .box6, .box7, .box8{
+    height: 30px;
+    width: 30px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    /* background-color: red; */
+    /* font-size: 50px; */
+    user-select: none;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--purple);
+    color: white;
+    border-color: var(--purple);
+    font-size: 18px;
+    transition: 200ms transform;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+/* Either add a class or an attribute disabled */
+.disabled{
+    pointer-events:none;
+    opacity: 0.7;
+}
